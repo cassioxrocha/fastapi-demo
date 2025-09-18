@@ -4,7 +4,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello from the server deployed with Disco!"}
+    return {"message": "Hello"}
 
 @app.get("/items/{item_id}")
 def read_item(item_id: int):
